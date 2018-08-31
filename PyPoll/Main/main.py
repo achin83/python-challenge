@@ -22,7 +22,7 @@ with open(election_data, newline='') as csvfile:
     next(csvfile)
 
     for row in csvreader:
-        #append only profit/loss to list for row count and average between month analysis
+        #append each row in voter file to list_voter list
         list_voter.append(row)
 
 #loop through and build separate lists per candidate
